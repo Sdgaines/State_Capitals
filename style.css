@@ -1,0 +1,159 @@
+@media screen and (max-width: 380px) {
+    
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background: linear-gradient(hsl(19, 95%, 43%), hsl(0, 0%, 100%), hsl(231, 95%, 43%));
+        background-repeat: no-repeat;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+    }
+
+    .container {
+        background-color: rgb(105, 156, 221);
+        width: 75vw;
+        height: 80vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .state-facts {
+        border: thin black solid;
+        position: relative;
+        height: 30px;
+        margin: 10px;
+        padding: 10px;
+        transition: 0.3s ease;
+        text-align: center;
+        background-color: rgb(130, 211, 211);
+    }
+
+    .title{
+        margin: 0 35px 0 0;
+    }
+
+    .capital {
+        display: none;
+        margin: 30px 0 0;
+        background-color: rgb(130, 211, 211);
+    }
+
+    .state-facts.active .capital {
+        display: block;
+        border: thin black solid;
+        border-radius: 20px;
+    }
+
+    .tog-faq {
+        position: absolute;
+        bottom: 5px;
+        left: 80px;   
+        display: flex;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tog-faq .fa-times {
+        display: none;
+    }
+
+    .state-facts.active .tog-faq .fa-times {
+        display: block;
+    }
+
+    .state-facts.active .tog-faq .fa-chevron-down {
+        display: none;
+    }
+
+    .fa-times {
+        width: 12px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+
+        *{
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(hsl(19, 95%, 43%), hsl(0, 0%, 100%), hsl(231, 95%, 43%));
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            margin: 0;
+        }
+        
+        .container {
+            background-color: rgb(105, 156, 221);
+            max-width: 75vw;
+            height: 60vh;
+            display: grid;
+            row-gap: 35px;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin: 0 auto;
+            overflow: auto;
+        }
+        
+        .state-facts {
+            background-color: rgb(130, 211, 211);;
+            border: 1px black solid;
+            position: relative;
+            height: 30px;
+            width: auto;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+    
+        .title{
+            margin: 0 35px 0 0;
+        }
+    
+        .capital {
+            background-color: rgb(130, 211, 211);;
+            display: none;
+            margin: 30px 0 0;
+        }
+    
+        .state-facts.active .capital {
+            display: block;
+            border: thin black solid;
+            border-radius: 20px;
+        }
+    
+        .tog-faq {
+            position: absolute;
+            bottom: 5px;
+            left: 80px;   
+            display: flex;
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .tog-faq .fa-times {
+            display: none;
+        }
+    
+        .state-facts.active .tog-faq .fa-times {
+            display: block;
+        }
+    
+        .state-facts.active .tog-faq .fa-chevron-down {
+            display: none;
+        }
+    
+        .fa-times {
+            width: 12px;
+        }
+    
+}
