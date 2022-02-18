@@ -1,4 +1,4 @@
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 470px) {
     
     * {
         box-sizing: border-box;
@@ -76,7 +76,7 @@
     }
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 471px) {
 
         *{
             box-sizing: border-box;
@@ -90,12 +90,14 @@
             align-items: center;
             font-size: 12px;
             margin: 0;
+            min-width: 900px;
+            min-height: 800px;
         }
         
         .container {
             background-color: rgb(105, 156, 221);
             max-width: 75vw;
-            height: 60vh;
+            height: 70vh;
             display: grid;
             row-gap: 35px;
             grid-template-columns: 1fr 1fr 1fr;
